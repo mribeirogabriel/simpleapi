@@ -1,14 +1,10 @@
 import express, { Request, Response } from "express";
+import HealthController from "../controllers/healthController";
+import MainController from "../controllers/mainController";
 
 const router = express.Router();
-const APP_NAME = process.env.APP_NAME || "simpleapi";
 
-router.get("/", (req: Request, res: Response): void => {
-  const response = {
-    app: APP_NAME,
-    timestamp: Date.now(),
-  };
-  res.status(200).json(response);
-});
+router.get("/", MainController.mainRoute);
+router.get("/healthcheck", HealthController.healthCheck);
 
 export default router;
