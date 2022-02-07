@@ -6,9 +6,20 @@
   "scripts": {
     "test": "jest",
     "dev": "nodemon",
-    "build": "tsc --project ./",
-    "prod": "node ./build/"
+    "build": "tsc --project ./"
   },
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
   "author": "https://github.com/mribeirogabriel/",
   "license": "ISC",
   "devDependencies": {
