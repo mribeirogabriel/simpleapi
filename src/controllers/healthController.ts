@@ -6,8 +6,8 @@ export default class HealthController {
   static async healthCheck(req: Request, res: Response): Promise<any> {
     const response = {
       app: APP_NAME,
-      path: req.path,
       method: req.method,
+      path: req.path,
       timestamp: Date.now(),
     };
     res.status(200).json(response);
