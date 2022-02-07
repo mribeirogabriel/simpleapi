@@ -8,18 +8,6 @@
     "dev": "nodemon",
     "build": "tsc --project ./"
   },
-  "builds": [
-    {
-      "src": "./build/index.js",
-      "use": "@now/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "./build/index.js"
-    }
-  ],
   "author": "https://github.com/mribeirogabriel/",
   "license": "ISC",
   "devDependencies": {
