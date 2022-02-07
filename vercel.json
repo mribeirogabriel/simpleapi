@@ -3,14 +3,14 @@
   "name": "simpleapi",
   "builds": [
     {
-      "src": "package.json",
-      "use": "vercel-sapper"
+      "src": "index.ts",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "build/index.ts"
+      "dest": "index.ts"
     }
   ]
 }
