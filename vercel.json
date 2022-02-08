@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "env": {},
   "builds": [
     {
       "src": "build/index.js",
-      "use": "@vercel/node",
-      "config": { "includeFiles": ["build/**"] }
+      "use": "@vercel/node"
     }
   ]
 }
