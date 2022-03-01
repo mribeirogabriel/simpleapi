@@ -1,4 +1,4 @@
-import api from "../src/api/api";
+import api from "../src/server/api";
 
 import request from "supertest";
 
