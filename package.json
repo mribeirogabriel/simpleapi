@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "dev": "nodemon",
-    "build": "tsc --project ./"
+    "build": "tsc --project ./build"
   },
   "author": "https://github.com/mribeirogabriel/",
   "license": "ISC",
